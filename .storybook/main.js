@@ -1,7 +1,11 @@
 module.exports = {
   staticDirs: ['../public'],
   stories: ['../src/components/**/stories.tsx'],
-  addons: ['@storybook/addon-essentials', 'storybook-addon-next-router'],
+  addons: [
+    '@storybook/addon-essentials',
+    'storybook-addon-next-router',
+    'storybook-dark-mode'
+  ],
   core: {
     builder: 'webpack5'
   },
