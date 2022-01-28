@@ -16,7 +16,8 @@ export default {
 export const Default: Story<BannerProps> = (args) => <Banner {...args} />
 
 Default.parameters = {
-  viewport: {
-    defaultViewport: 'mobile1'
+  layout: 'fullscreen',
+  backgrounds: {
+    default: 'white'
   }
 }
