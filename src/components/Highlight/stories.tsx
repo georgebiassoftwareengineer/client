@@ -8,15 +8,23 @@ export default {
     title: 'Read Dead está de de volta!',
     subtitle: 'Venha conhecer as novas aventuras de John Marston',
     backgroundImage: '/img/red-dead-img.jpg',
-    buttonLabel: 'Comprar agora'
+    buttonLabel: 'Comprar agora',
+    buttonLink: '/games/rdr2'
   }
 } as Meta
 
-export const Default: Story<HighlightProps> = (args) => <Highlight {...args} />
+export const Default: Story<HighlightProps> = (args) => (
+  <div style={{ maxWidth: '104rem' }}>
+    <Highlight {...args} />
+  </div>
+)
 
-Default.parameters = {
-  layout: 'fullscreen',
-  viewport: {
-    defaultViewport: 'mobile1'
-  }
+export const WithFloatImage: Story<HighlightProps> = (args) => (
+  <div style={{ maxWidth: '104rem' }}>
+    <Highlight {...args} />
+  </div>
+)
+
+WithFloatImage.args = {
+  floatImage: '/img/red-dead-float.png'
 }
