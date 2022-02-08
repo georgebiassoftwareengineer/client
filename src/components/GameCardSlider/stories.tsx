@@ -53,10 +53,7 @@ export default {
   component: GameCardSlider,
   args: { items },
   parameters: {
-    layout: 'fullscreen',
-    backgrounds: {
-      default: 'dark'
-    }
+    layout: 'fullscreen'
   }
 } as Meta
 

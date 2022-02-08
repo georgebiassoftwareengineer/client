@@ -10,6 +10,19 @@ export const parameters = {
   },
   darkMode: {
     dark: { ...themes.dark, appBg: 'black' }
+  },
+  backgrounds: {
+    default: 'won-light',
+    values: [
+      {
+        name: 'won-light',
+        value: theme.colors.white
+      },
+      {
+        name: 'won-dark',
+        value: theme.colors.mainBg
+      }
+    ]
   }
 }
 

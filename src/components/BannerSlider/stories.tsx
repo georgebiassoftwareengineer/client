@@ -31,10 +31,7 @@ export default {
   component: BannerSlider,
   args: { items },
   parameters: {
-    layout: 'fullscreen',
-    backgrounds: {
-      default: 'dark'
-    }
+    layout: 'fullscreen'
   }
 } as Meta
 

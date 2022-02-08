@@ -33,3 +33,9 @@ WithRibbon.args = {
   ribbonSize: 'normal',
   ribbonColor: 'primary'
 }
+
+Default.parameters = {
+  backgrounds: {
+    default: 'won-dark'
+  }
+}
